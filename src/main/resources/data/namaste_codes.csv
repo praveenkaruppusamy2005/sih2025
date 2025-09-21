@@ -1,0 +1,101 @@
+code,display,definition,system,category,subcategory,who_terminology_code,icd11_tm2_code,icd11_biomedicine_code
+NAM001,Vata Dosha Imbalance,Imbalance in Vata dosha affecting body functions,Ayurveda,Dosha Imbalance,Vata Disorders,WHO001,TM2-001,A00-B99
+NAM002,Pitta Dosha Imbalance,Imbalance in Pitta dosha affecting body functions,Ayurveda,Dosha Imbalance,Pitta Disorders,WHO002,TM2-002,A00-B99
+NAM003,Kapha Dosha Imbalance,Imbalance in Kapha dosha affecting body functions,Ayurveda,Dosha Imbalance,Kapha Disorders,WHO003,TM2-003,A00-B99
+NAM004,Jwara,Fever with various presentations,Ayurveda,Fever,Acute Fever,WHO004,TM2-004,R50-R69
+NAM005,Kasa,Cough with different types,Ayurveda,Respiratory,Cough Disorders,WHO005,TM2-005,R05-R06
+NAM006,Shwasa,Breathing difficulties,Ayurveda,Respiratory,Breathing Disorders,WHO006,TM2-006,R06-R07
+NAM007,Hridroga,Heart diseases,Ayurveda,Cardiovascular,Heart Disorders,WHO007,TM2-007,I00-I99
+NAM008,Mutrakrichra,Difficulty in urination,Ayurveda,Urogenital,Urinary Disorders,WHO008,TM2-008,N30-N39
+NAM009,Prameha,Diabetes and related conditions,Ayurveda,Metabolic,Diabetes,WHO009,TM2-009,E10-E14
+NAM010,Arsha,Piles and hemorrhoids,Ayurveda,Gastrointestinal,Anal Disorders,WHO010,TM2-010,K60-K64
+NAM011,Kushtha,Skin diseases,Ayurveda,Dermatology,Skin Disorders,WHO011,TM2-011,L00-L99
+NAM012,Netraroga,Eye diseases,Ayurveda,Ophthalmology,Eye Disorders,WHO012,TM2-012,H00-H59
+NAM013,Karnaroga,Ear diseases,Ayurveda,ENT,Ear Disorders,WHO013,TM2-013,H60-H95
+NAM014,Nasaroga,Nose diseases,Ayurveda,ENT,Nose Disorders,WHO014,TM2-014,J30-J39
+NAM015,Mukharoga,Oral diseases,Ayurveda,Dentistry,Oral Disorders,WHO015,TM2-015,K00-K14
+NAM016,Vata Vyadhi,Vata-related diseases,Ayurveda,Dosha Disorders,Vata Diseases,WHO016,TM2-016,G90-G99
+NAM017,Pitta Vyadhi,Pitta-related diseases,Ayurveda,Dosha Disorders,Pitta Diseases,WHO017,TM2-017,K20-K31
+NAM018,Kapha Vyadhi,Kapha-related diseases,Ayurveda,Dosha Disorders,Kapha Diseases,WHO018,TM2-018,J40-J47
+NAM019,Agni Mandya,Digestive fire weakness,Ayurveda,Digestive,Digestive Disorders,WHO019,TM2-019,K30-K31
+NAM020,Ama,Undigested food toxins,Ayurveda,Digestive,Toxin Disorders,WHO020,TM2-020,K59-K64
+NAM021,Dhatu Kshaya,Tissue depletion,Ayurveda,Tissue Disorders,Tissue Depletion,WHO021,TM2-021,E40-E46
+NAM022,Dhatu Vriddhi,Tissue excess,Ayurveda,Tissue Disorders,Tissue Excess,WHO022,TM2-022,E65-E68
+NAM023,Srotas Dushti,Channel obstruction,Ayurveda,Channel Disorders,Channel Obstruction,WHO023,TM2-023,I70-I79
+NAM024,Ojas Kshaya,Immunity depletion,Ayurveda,Immunity,Immunity Disorders,WHO024,TM2-024,D80-D89
+NAM025,Tejas Kshaya,Metabolic fire depletion,Ayurveda,Metabolic,Metabolic Disorders,WHO025,TM2-025,E70-E90
+NAM026,Prana Kshaya,Life force depletion,Ayurveda,Vital Force,Life Force Disorders,WHO026,TM2-026,R50-R69
+NAM027,Manas Roga,Mental diseases,Ayurveda,Mental Health,Mental Disorders,WHO027,TM2-027,F01-F99
+NAM028,Buddhi Kshaya,Intelligence depletion,Ayurveda,Mental Health,Cognitive Disorders,WHO028,TM2-028,F01-F09
+NAM029,Smriti Kshaya,Memory depletion,Ayurveda,Mental Health,Memory Disorders,WHO029,TM2-029,F01-F09
+NAM030,Chitta Vikara,Mind disorders,Ayurveda,Mental Health,Mind Disorders,WHO030,TM2-030,F20-F29
+NAM031,Rajoguna Vriddhi,Increased Rajas quality,Ayurveda,Mental Health,Rajas Disorders,WHO031,TM2-031,F30-F39
+NAM032,Tamoguna Vriddhi,Increased Tamas quality,Ayurveda,Mental Health,Tamas Disorders,WHO032,TM2-032,F40-F49
+NAM033,Sattva Kshaya,Decreased Sattva quality,Ayurveda,Mental Health,Sattva Disorders,WHO033,TM2-033,F50-F59
+NAM034,Prakriti Vikriti,Constitution imbalance,Ayurveda,Constitution,Constitution Disorders,WHO034,TM2-034,Z00-Z99
+NAM035,Vikriti,Disease manifestation,Ayurveda,Pathology,Disease States,WHO035,TM2-035,A00-Z99
+NAM036,Nidana,Causative factors,Ayurveda,Etiology,Causative Factors,WHO036,TM2-036,Z00-Z99
+NAM037,Purvarupa,Premonitory symptoms,Ayurveda,Symptoms,Pre-symptoms,WHO037,TM2-037,R00-R99
+NAM038,Rupa,Disease symptoms,Ayurveda,Symptoms,Disease Symptoms,WHO038,TM2-038,R00-R99
+NAM039,Upashaya,Relieving factors,Ayurveda,Treatment,Relieving Factors,WHO039,TM2-039,Z00-Z99
+NAM040,Samprapti,Disease pathogenesis,Ayurveda,Pathogenesis,Disease Process,WHO040,TM2-040,A00-Z99
+NAM041,Chikitsa,Treatment approach,Ayurveda,Treatment,Treatment Methods,WHO041,TM2-041,Z00-Z99
+NAM042,Aushadha,Medicinal treatment,Ayurveda,Treatment,Medicinal Therapy,WHO042,TM2-042,Z00-Z99
+NAM043,Ahara,Dietary treatment,Ayurveda,Treatment,Dietary Therapy,WHO043,TM2-043,Z00-Z99
+NAM044,Vihara,Lifestyle treatment,Ayurveda,Treatment,Lifestyle Therapy,WHO044,TM2-044,Z00-Z99
+NAM045,Yoga,Union therapy,Ayurveda,Treatment,Yoga Therapy,WHO045,TM2-045,Z00-Z99
+NAM046,Pranayama,Breathing therapy,Ayurveda,Treatment,Breathing Therapy,WHO046,TM2-046,Z00-Z99
+NAM047,Dhyana,Meditation therapy,Ayurveda,Treatment,Meditation Therapy,WHO047,TM2-047,Z00-Z99
+NAM048,Panchakarma,Five cleansing therapies,Ayurveda,Treatment,Cleansing Therapy,WHO048,TM2-048,Z00-Z99
+NAM049,Vamana,Emesis therapy,Ayurveda,Treatment,Emesis Therapy,WHO049,TM2-049,Z00-Z99
+NAM050,Virechana,Purgation therapy,Ayurveda,Treatment,Purgation Therapy,WHO050,TM2-050,Z00-Z99
+NAM051,Basti,Enema therapy,Ayurveda,Treatment,Enema Therapy,WHO051,TM2-051,Z00-Z99
+NAM052,Nasya,Nasal therapy,Ayurveda,Treatment,Nasal Therapy,WHO052,TM2-052,Z00-Z99
+NAM053,Raktamokshana,Bloodletting therapy,Ayurveda,Treatment,Bloodletting Therapy,WHO053,TM2-053,Z00-Z99
+NAM054,Shirodhara,Head oil therapy,Ayurveda,Treatment,Head Therapy,WHO054,TM2-054,Z00-Z99
+NAM055,Abhyanga,Oil massage therapy,Ayurveda,Treatment,Massage Therapy,WHO055,TM2-055,Z00-Z99
+NAM056,Swedana,Sweating therapy,Ayurveda,Treatment,Sweating Therapy,WHO056,TM2-056,Z00-Z99
+NAM057,Lepana,Application therapy,Ayurveda,Treatment,Application Therapy,WHO057,TM2-057,Z00-Z99
+NAM058,Avagaha,Immersion therapy,Ayurveda,Treatment,Immersion Therapy,WHO058,TM2-058,Z00-Z99
+NAM059,Upanaha,Poultice therapy,Ayurveda,Treatment,Poultice Therapy,WHO059,TM2-059,Z00-Z99
+NAM060,Parisheka,Pouring therapy,Ayurveda,Treatment,Pouring Therapy,WHO060,TM2-060,Z00-Z99
+NAM061,Anjana,Eye application therapy,Ayurveda,Treatment,Eye Therapy,WHO061,TM2-061,Z00-Z99
+NAM062,Karnapoorana,Ear filling therapy,Ayurveda,Treatment,Ear Therapy,WHO062,TM2-062,Z00-Z99
+NAM063,Gandusha,Mouth holding therapy,Ayurveda,Treatment,Mouth Therapy,WHO063,TM2-063,Z00-Z99
+NAM064,Kavala,Mouth gargling therapy,Ayurveda,Treatment,Gargling Therapy,WHO064,TM2-064,Z00-Z99
+NAM065,Dhumapana,Smoke inhalation therapy,Ayurveda,Treatment,Smoke Therapy,WHO065,TM2-065,Z00-Z99
+NAM066,Tambula,Betel chewing therapy,Ayurveda,Treatment,Betel Therapy,WHO066,TM2-066,Z00-Z99
+NAM067,Manthana,Churning therapy,Ayurveda,Treatment,Churning Therapy,WHO067,TM2-067,Z00-Z99
+NAM068,Sechana,Irrigation therapy,Ayurveda,Treatment,Irrigation Therapy,WHO068,TM2-068,Z00-Z99
+NAM069,Utkarika,Paste therapy,Ayurveda,Treatment,Paste Therapy,WHO069,TM2-069,Z00-Z99
+NAM070,Prakshalana,Washing therapy,Ayurveda,Treatment,Washing Therapy,WHO070,TM2-070,Z00-Z99
+NAM071,Avacharana,Application therapy,Ayurveda,Treatment,Application Therapy,WHO071,TM2-071,Z00-Z99
+NAM072,Anulepana,Smearing therapy,Ayurveda,Treatment,Smearing Therapy,WHO072,TM2-072,Z00-Z99
+NAM073,Abhyavaharana,Application therapy,Ayurveda,Treatment,Application Therapy,WHO073,TM2-073,Z00-Z99
+NAM074,Samvahana,Stroking therapy,Ayurveda,Treatment,Stroking Therapy,WHO074,TM2-074,Z00-Z99
+NAM075,Mardana,Kneading therapy,Ayurveda,Treatment,Kneading Therapy,WHO075,TM2-075,Z00-Z99
+NAM076,Gharshana,Rubbing therapy,Ayurveda,Treatment,Rubbing Therapy,WHO076,TM2-076,Z00-Z99
+NAM077,Udgharshana,Scraping therapy,Ayurveda,Treatment,Scraping Therapy,WHO077,TM2-077,Z00-Z99
+NAM078,Sampidana,Compression therapy,Ayurveda,Treatment,Compression Therapy,WHO078,TM2-078,Z00-Z99
+NAM079,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO079,TM2-079,Z00-Z99
+NAM080,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO080,TM2-080,Z00-Z99
+NAM081,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO081,TM2-081,Z00-Z99
+NAM082,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO082,TM2-082,Z00-Z99
+NAM083,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO083,TM2-083,Z00-Z99
+NAM084,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO084,TM2-084,Z00-Z99
+NAM085,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO085,TM2-085,Z00-Z99
+NAM086,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO086,TM2-086,Z00-Z99
+NAM087,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO087,TM2-087,Z00-Z99
+NAM088,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO088,TM2-088,Z00-Z99
+NAM089,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO089,TM2-089,Z00-Z99
+NAM090,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO090,TM2-090,Z00-Z99
+NAM091,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO091,TM2-091,Z00-Z99
+NAM092,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO092,TM2-092,Z00-Z99
+NAM093,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO093,TM2-093,Z00-Z99
+NAM094,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO094,TM2-094,Z00-Z99
+NAM095,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO095,TM2-095,Z00-Z99
+NAM096,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO096,TM2-096,Z00-Z99
+NAM097,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO097,TM2-097,Z00-Z99
+NAM098,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO098,TM2-098,Z00-Z99
+NAM099,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO099,TM2-099,Z00-Z99
+NAM100,Samudgharshana,Circular rubbing therapy,Ayurveda,Treatment,Circular Therapy,WHO100,TM2-100,Z00-Z99

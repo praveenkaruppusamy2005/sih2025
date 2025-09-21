@@ -1,0 +1,91 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /fhir-terminology
+
+spring:
+  application:
+    name: namaste-icd11-terminology
+
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:h2:mem:terminology_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.H2Dialect
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  # Redis configuration (for production)
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 2000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://abha.gov.in/oauth2
+
+# WHO ICD-11 API Configuration
+icd11:
+  api:
+    base-url: https://id.who.int/icd/release/11/2019-04
+    client-id: e3d3a654-ab4a-4724-a5f2-233273acfd62_054e395f-02df-4b7d-ae4f-e42ca8e91fb4
+    client-secret: YtjXAM/CqQk1cQMLsCnfzkUADk80psKpdMMRP6TLVJM=
+    token-url: https://icdaccessmanagement.who.int/connect/token
+    scope: icdapi_access
+
+# FHIR Configuration
+fhir:
+  server:
+    base-url: http://localhost:8080/fhir-terminology
+  namaste:
+    code-system: http://terminology.ayush.gov.in/CodeSystem/namaste
+    version: "1.0"
+  icd11:
+    code-system: http://id.who.int/icd/release/11/2019-04
+    tm2-system: http://id.who.int/icd/release/11/2019-04/tm2
+
+# Audit Configuration
+audit:
+  enabled: true
+  retention-days: 365
+
+# CSV Data Configuration
+csv:
+  namaste-file: classpath:data/namaste_codes.csv
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com.ayush.terminology: DEBUG
+    org.springframework.security: DEBUG

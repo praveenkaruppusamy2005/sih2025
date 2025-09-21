@@ -1,0 +1,118 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: namaste-postgres
+    environment:
+      POSTGRES_DB: terminology_db
+      POSTGRES_USER: terminology_user
+      POSTGRES_PASSWORD: terminology_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    networks:
+      - namaste-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U terminology_user -d terminology_db"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: namaste-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - namaste-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Backend API
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: namaste-backend
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/terminology_db
+      SPRING_DATASOURCE_USERNAME: terminology_user
+      SPRING_DATASOURCE_PASSWORD: terminology_password
+      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_PORT: 6379
+      ICD11_API_BASE_URL: https://id.who.int/icd/release/11/2019-04
+      ICD11_API_CLIENT_ID: e3d3a654-ab4a-4724-a5f2-233273acfd62_054e395f-02df-4b7d-ae4f-e42ca8e91fb4
+      ICD11_API_CLIENT_SECRET: YtjXAM/CqQk1cQMLsCnfzkUADk80psKpdMMRP6TLVJM=
+      ICD11_API_TOKEN_URL: https://icdaccessmanagement.who.int/connect/token
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./src/main/resources/data:/app/data
+      - ./logs:/app/logs
+    networks:
+      - namaste-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/fhir-terminology/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: namaste-frontend
+    environment:
+      REACT_APP_API_URL: http://localhost:8080/fhir-terminology
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - namaste-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: namaste-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - namaste-network
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  namaste-network:
+    driver: bridge
